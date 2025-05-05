@@ -28,7 +28,7 @@ The goal was to generate a 3D object from a simple image. Here's the logic:
 
 ---
 
-#Text to 3D Model
+# Text to 3D Model
 
 This script generates a 3D model from a text prompt using OpenAI’s Shape-E diffusion model and visualizes it.
 
