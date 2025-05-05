@@ -17,7 +17,7 @@ The goal was to generate a 3D object from a simple image. Here's the logic:
 
 ---
 
-## 🛠Libraries Used
+## Libraries Used
 
 - `torch` – PyTorch for MiDaS model
 - `opencv-python` – Image processing
