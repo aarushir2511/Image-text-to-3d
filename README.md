@@ -1,4 +1,3 @@
-# Image to 3d
 # Image to 3D Model
 
 This project takes a 2D input image and generates a 3D `.obj` mesh model using a combination of background removal, depth estimation, and 3D reconstruction techniques. It leverages PyTorch, MiDaS, Open3D, and rembg to create visually accurate point clouds and meshes.
