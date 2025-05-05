@@ -1,11 +1,11 @@
 # Image to 3d
-# 📸→🔺 Image to 3D Model Generator (OBJ)
+# Image to 3D Model
 
 This project takes a 2D input image and generates a 3D `.obj` mesh model using a combination of background removal, depth estimation, and 3D reconstruction techniques. It leverages PyTorch, MiDaS, Open3D, and rembg to create visually accurate point clouds and meshes.
 
 ---
 
-## 🧠 Thought Process
+## Thought Process
 
 The goal was to generate a 3D object from a simple image. Here's the logic:
 
@@ -17,7 +17,7 @@ The goal was to generate a 3D object from a simple image. Here's the logic:
 
 ---
 
-## 🛠️ Libraries Used
+## 🛠Libraries Used
 
 - `torch` – PyTorch for MiDaS model
 - `opencv-python` – Image processing
@@ -29,9 +29,32 @@ The goal was to generate a 3D object from a simple image. Here's the logic:
 
 ---
 
+#Text to 3D Model
+
+This script generates a 3D model from a text prompt using OpenAI’s Shape-E diffusion model and visualizes it.
+
+## Libraries Used
+
+- **torch** – For running the deep learning model.  
+- **numpy** – For numerical operations.  
+- **trimesh** – For 3D mesh handling and visualization.  
+- **shap_e** – OpenAI’s text-to-3D generation model.  
+
+## Thought Process
+
+- Take a text prompt as input.  
+- Generate a 3D object using Shape-E.  
+- Save the object as a `.obj` file.  
+- Create a preview image using `trimesh`.  
+- Launch an interactive viewer for quick inspection.
 
 
-## 📦 Virtual Environment Setup
+## Steps to Run
+**Install dependencies**  
+   Shape-E and all necessary libraries are already listed in `requirements.txt`, so just run it, given below.
+
+
+## Virtual Environment Setup
 
 ```bash
 # Create and activate virtual environment
@@ -40,4 +63,8 @@ source venv/bin/activate       # Linux/macOS
 venv\Scripts\activate          # Windows
 
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt  (includes shaoe-e in req file)
+
+#run
+python image3d.py
+python text3d.py
